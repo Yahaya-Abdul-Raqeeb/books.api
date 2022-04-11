@@ -20,7 +20,7 @@ res.status(200).json(books)
 }*/
 //delete a book
 const deleteBook=("/book/:title", (req, res)=>{
-    res.json(books.filter((book)=>book.title!==req.params.title))
+    res.json(books.filter((book)=>book.title!=req.params.title))
 })
 
 module.exports={getBooks, deleteBook}
